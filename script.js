@@ -8,7 +8,7 @@
  */ 
 var players = new Array();
 
-var extension = 'wav'; // for compatibility. 'mp3' usually also works.
+var extension = 'mp3'; // for compatibility. 'mp3' usually also works.
 
 /**
  * This is a boolean object (boolean means true or false).
