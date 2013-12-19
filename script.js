@@ -8,7 +8,7 @@
  */ 
 var players = new Array();
 
-var extension = 'mp3'; // for compatibility. 'mp3' usually also works.
+var extension = 'wav'; // for compatibility. 'mp3' usually also works.
 
 /**
  * This is a boolean object (boolean means true or false).
@@ -88,6 +88,7 @@ $(function() {
     // it should store the event info in a variable called e, and
     // e.keyCode gives us the keyCode for the event.
     $(document.body).keydown(function(e) {
+        e.preventDefault();
         // This next line gets the index in codeList where e.keyCode
         // can be found. If codeList doesn't contain e.keyCode
         // (i.e. they pressed an invalid key) then index will be -1.
