@@ -134,7 +134,7 @@ function randomSongForButton(index) {
 }
 
 function playSongForIndex(index) {
-    if (players[index]) {
+    if (players[index] && !players[index].paused) {
         // This backlog gets WAY too annoying.
         // backlog('Song already playing at #' + index);
         return;
